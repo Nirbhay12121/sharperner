@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Keeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Password Keeper</h1>
+
+    <!-- Input -->
+    <input type="text" id="title" placeholder="Title (e.g. Gmail)">
+    <input type="text" id="password" placeholder="Password">
+    <button onclick="addPassword()">Add</button>
+
+    <!-- Search -->
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchPassword()">
+
+    <!-- List -->
+    <div id="list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
