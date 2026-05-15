@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+</head>
+<body>
+
+    <h1>All Messages</h1>
+
+    <% messages.forEach((msg) => { %>
+
+        <p><%= msg %></p>
+
+    <% }) %>
+
+    <hr>
+
+    <form action="/add-message" method="POST">
+
+        <input
+            type="text"
+            name="message"
+            placeholder="Enter message"
+            required
+        >
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</body>
+</html>
